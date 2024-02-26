@@ -1,0 +1,531 @@
+/* Start Variables */
+:root{
+    --Cyan: hsl(180, 66%, 49%);
+    --Dark-Violet: hsl(257, 27%, 26%);
+    --TDark-Violet: hsl(257, 27%, 26% ,0.3);
+    --Red: hsl(0, 87%, 67%);
+}
+/* End Variables */
+/* Start Global Rules */
+*{
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+} 
+
+body{
+    font-family: "Poppins", sans-serif;
+    margin: 10px 0px;
+}
+/* End Global Rules */
+/* Start header */
+header{
+    display: flex;
+    align-items: center;
+    padding:15px 75px 20px 100px;
+}
+
+header  nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+header .nav-right .unique{
+    background-color: var(--Cyan);
+    padding: 7px 10px;
+    border-radius: 25px;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+header ul{
+    display: flex;
+    gap: 30px;
+}
+
+header ul li{
+    list-style: none;
+    font-weight: 600;
+    font-size:smaller;
+    color: gray;
+}
+
+header .bars-model{
+    display: none;
+}
+
+.block{
+    display: flex;
+
+}
+/* End header */
+
+/* Start moreJust */
+.moreJust{
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0px 0px 0px 100px;
+    height: 275px;
+    overflow: hidden;
+}
+
+.moreJust img{
+    width: 430px;
+    position: absolute;
+    right: -60px;
+    top: 0px;
+}
+
+.moreJust div{
+    width: 380px;
+}
+
+.moreJust div h1{
+    font-size: xxx-large;
+    font-weight: bolder;
+    margin: 0px 0px;
+} 
+
+.moreJust div p{
+    color: rgb(146, 142, 142);  
+} 
+
+button{
+    color: white;
+    background-color: var(--Cyan);
+    padding: 10px 20px;
+    font-weight: 600;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    }
+/* End moreJust */
+
+/* Start content */
+
+
+.content{
+    background-color: hsl(230deg 25% 95%);
+    position: absolute;
+    z-index: -2;
+    width: 100%;
+    margin-top: 75px;
+}
+
+.content .bart1{
+    padding-left: 100px;
+}
+.lift{
+    margin-top: -90px;
+}
+
+.box-link{
+    background-color: var(--Dark-Violet);
+    width: calc(100% - 100px);
+    padding: 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.box-link input{
+    width: 80%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+.box-link button{
+    padding: 10px;
+    border-radius: 8px;
+    margin-left: 20px;
+}
+
+.ground{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.advanced{
+    text-align: center;
+}
+
+.advanced div{
+    color: var(--Dark-Violet);
+    font-weight: bold;
+}
+
+.advanced p{
+    color: gray;
+}
+
+.ground .advanced{
+    width: 500px;
+    margin-top: 50px;
+}
+
+.content .Links{
+    display: flex;
+    background-color: white;
+    margin-top: 20px;
+    width:calc(100% - 100px);
+    padding: 12px;
+    justify-content: space-between;
+    border-radius: 6px;
+}
+
+.Links div{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+
+.Links div button{
+    border-radius: 5px;
+}
+
+.Links div button:hover{
+    background-color: rgb(135, 235, 235);
+}
+
+.Links div div{
+    color: var(--Cyan);
+}
+/* End content  */
+
+/* Start cards */
+.cards{
+    display: flex;
+    gap: 20px;
+    padding-right: 100px;
+    margin-top: 60px;
+}
+
+.span1, .span2{
+    position: absolute;
+    width: 20px;
+    height: 6px;
+    right: -20px;
+    background-color: var(--Cyan);
+    top: 40%;
+}
+
+.span2{
+    top: 89px;
+}
+
+.card{
+    position: relative;
+    background-color: white;
+    width: calc( (100% / 3));
+    height: 250px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.card div{
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+    margin-top: -55px;
+    position: relative;
+    background-color: var(--Dark-Violet);
+}
+
+.top{
+    margin-top: 80px
+}
+
+.card div img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+}
+
+.card h2{
+    color: var(--Dark-Violet);
+    font-size: large;
+    font-weight: bolder;
+    margin-bottom:0px;
+}
+
+.card p{
+    color: gray;
+    margin-bottom: 0px;
+}
+/* End cards */
+
+/* Start Boost */
+
+.boost{
+    background-image: url('../images/bg-boost-desktop.svg');
+    background-color: var(--Dark-Violet);
+    background-size: cover;
+    background-position: center ;
+    margin-top: 55px;
+    padding: 20px; 
+    text-align: center;
+}
+
+.boost h2{
+    color: white;
+
+}
+
+/* End Boost */
+
+/* End Footer */
+footer{
+    background-color: black;
+    padding: 50px 100px;
+}
+
+footer .footer-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.part-tow {
+    display: flex;
+    gap: 80px;  
+}
+
+.Social-Media{
+    display: flex;
+    align-items:end;
+    gap:15px ;
+}
+
+footer .footer-links{
+    display: flex;
+    gap: 20px;
+}
+
+footer .footer-links div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer .footer-links div a{
+    color: hsl(0deg 0% 99% / 46%);
+    font-size: smaller;
+    list-style: none;
+    text-decoration: none;
+}
+
+footer div h2{
+    color: white;
+}
+
+/* End Footer */
+
+
+
+
+
+
+
+/* Mobil  */
+@media (max-width:800px){
+    /* Start header */
+header{
+    display: flex;
+    justify-content: space-between;  
+    padding: 20px;      
+}
+
+header nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    width: calc(100% - 55px);
+    background-color: var(--Dark-Violet);
+    border-radius: 7px;
+    padding: 0px 20px;
+}
+
+header nav .nav-left{
+    border-bottom: 1px solid gray;
+}
+
+header nav ul{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding: 10px 0px;
+}
+
+header .bars-model{
+    display: block;
+    width: 25px;
+}
+
+header nav ul li{
+    color: white;
+    font-size: large;
+}
+
+header nav .nav-right .unique{
+    padding: 10px 37%;
+    white-space: nowrap;
+}
+
+    /* End header */
+
+/* Start moreJust */
+.moreJust{
+    display: flex;
+    position: static;
+    flex-direction: column-reverse;
+    overflow: hidden;
+    height: auto;
+    padding: 0px;
+}
+
+.moreJust div{
+    text-align: center;
+    padding:25px;
+}
+
+.moreJust div h1{
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.moreJust img{
+    width: 475px;
+    margin-left: 140px;
+    position: static;
+}
+
+    /* End moreJust */
+
+/* Start BoxLink */
+.content .bart1{
+    padding: 0px 25px;
+}
+
+.lift{
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    margin-top: -115;
+}
+.box-link {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.box-link input{
+    width: 100%;
+}
+
+.box-link button{
+    width: 100%;
+    margin: 0px;
+}
+
+.advanced {
+    padding: 0px 20px;
+}
+
+.advanced div {
+    font-size: x-large;
+}
+   /* End BoxLink */
+
+    /* Start cards */
+.content .Links{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Links div{
+    display: flex;
+    flex-direction: column;
+    padding: 6px 0px;
+}
+
+.Links button{
+    width: 100%;
+}
+
+.Links:first-child{
+    color: brown;
+}
+
+.Links .long-link{
+    border-bottom: 1px solid gainsboro;
+    padding-bottom: 10px;
+}
+
+/* End cards */
+
+.cards{
+   padding: 20px;
+   flex-direction: column;
+}
+
+.card div{
+    text-align: center;
+}
+
+.cards .card {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card .span1 , .span2{
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 105%;
+    width: 6px;
+    height: 20px;
+}
+
+.top{
+    margin-top: 40px;
+}
+
+/* Start Boost */
+.boost{
+    background-image: url(../images/bg-boost-mobile.svg);
+}
+/* End Boost */
+
+/* Start Footer  */
+footer .footer-div {
+    flex-direction: column;
+    text-align: center;  
+}
+
+.part-tow {
+    flex-direction: column;
+    gap: 50px; 
+}
+
+.Social-Media{
+    justify-content: center;
+}
+
+footer .footer-links{
+    flex-direction: column;
+}
+/* End Footer  */
+
+
+}
