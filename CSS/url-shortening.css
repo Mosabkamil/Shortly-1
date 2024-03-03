@@ -213,6 +213,10 @@ button{
     margin-bottom: 0px;
 }
 
+.copy{
+    background-color: var(--Dark-Violet);
+}
+
 .Links div button{
     border-radius: 5px;
 }

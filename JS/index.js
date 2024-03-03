@@ -33,7 +33,6 @@ function getTodoFormLocalStorage() {
   }
 }
 
-window.localStorage.clear();
 
 function createUrlToDatabase(long) {
   const url = new Object();
@@ -109,6 +108,9 @@ function copy(p_short) {
 
   button.onclick = function (e) {
     copyTextToClipboard(p_short);
+    button.innerHTML = "Copied!";
+    button.classList.add("copy")
+    setUrlToLocalStorage();
     console.log("ook");
   };
 
