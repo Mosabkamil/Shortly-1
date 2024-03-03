@@ -210,6 +210,7 @@ button{
 
 .short-link p{
     color: var(--Cyan);
+    margin-bottom: 0px;
 }
 
 .Links div button{
