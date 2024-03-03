@@ -102,6 +102,10 @@ button{
     border-radius: 15px;
     cursor: pointer;
     }
+
+    button:hover{
+        background-color: hsl(180deg 68% 75%);
+    }
 /* End moreJust */
 
 /* Start content */
@@ -139,6 +143,17 @@ button{
     outline: none;
 }
 
+.span-error{
+    display: flex;
+    color: #ff5722a3;
+    font-size: small;
+    padding-top: 5px;
+}
+
+.error{
+    border: 2px solid red;
+}
+
 .box-link button{
     padding: 10px;
     border-radius: 8px;
@@ -168,21 +183,33 @@ button{
     margin-top: 50px;
 }
 
+.copyButton{
+    border-radius: 5px;
+}
+
 .content .Links{
     display: flex;
     background-color: white;
     margin-top: 20px;
+    align-items: center;
     width:calc(100% - 100px);
     padding: 12px;
     justify-content: space-between;
     border-radius: 6px;
 }
 
-.Links div{
-    display: flex;
-    align-items: center;
-    flex-wrap: nowrap;
-    gap: 10px;
+.long-link{
+    width: 50%;
+}
+
+.short-link{
+   display: flex;
+   align-items: baseline;
+   gap: 20px;
+}
+
+.short-link p{
+    color: var(--Cyan);
 }
 
 .Links div button{
@@ -212,7 +239,7 @@ button{
     height: 6px;
     right: -20px;
     background-color: var(--Cyan);
-    top: 40%;
+    top: 53%;
 }
 
 .span2{
@@ -223,7 +250,7 @@ button{
     position: relative;
     background-color: white;
     width: calc( (100% / 3));
-    height: 250px;
+    height: fit-content;
     padding: 20px;
     border-radius: 8px;
 }
@@ -322,13 +349,10 @@ footer .footer-links div a{
 
 footer div h2{
     color: white;
+    margin-top: 0px;
 }
 
 /* End Footer */
-
-
-
-
 
 
 
@@ -433,6 +457,7 @@ header nav .nav-right .unique{
 .box-link button{
     width: 100%;
     margin: 0px;
+    margin-top: 15px;
 }
 
 .advanced {
@@ -454,20 +479,23 @@ header nav .nav-right .unique{
 .Links div{
     display: flex;
     flex-direction: column;
-    padding: 6px 0px;
+    padding: 0px;
+    width: 100%;
 }
 
 .Links button{
     width: 100%;
 }
 
-.Links:first-child{
-    color: brown;
+.Links .long-link , .short-link{
+    width: 100%;
+    margin: 0px;
 }
 
 .Links .long-link{
     border-bottom: 1px solid gainsboro;
     padding-bottom: 10px;
+    width: 100%;
 }
 
 /* End cards */
@@ -494,7 +522,7 @@ header nav .nav-right .unique{
     transform: translate(-50%, -50%);
     top: 105%;
     width: 6px;
-    height: 20px;
+    height: 30px;
 }
 
 .top{
